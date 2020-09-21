@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Iniciar sesion - Administrador</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="sign-in.css" rel="stylesheet">
+    </head>
+    <body class="bg-white d-flex flex-column">
+        <header class="align-items-center border d-flex fixed-top justify-content-around w-100">
+            <div class="align-items-center col-md-3 p-2"> 
+                <a href="#"> <img src="_home_pc-standard_Documentos_proto_1200px-Sena_Colombia_logo.svg.png" alt="" width="60" height="60"> </a> 
+            </div>
+            <div>
+                <span></span>
+                <b><span></span><a href="index.html"><span><span>Regresar a la pagina de inicio</span></span>&nbsp;</a></b>
+                <br>
+            </div>
+        </header>
+        <form class="form-signin text-center" id="form-init-sesion">
+            <img class="mb-4" src="_home_pc-standard_Documentos_proto_1281481.svg" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Administrador</h1>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="text" id="inputEmail" class="form-control" required="" autofocus="" value="" placeholder="Numero de documento">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control mt-3" placeholder="Contraseña" required="">
+            <div class="checkbox mb-3">
+                <label></label>
+            </div>
+            <button class="btn btn-block btn-lg btn-outline-warning btn-warning text-white" type="submit">
+                <b>&nbsp;Iniciar sesion</b>
+            </button>
+            <div class="alert alert-danger mt-3 collapse">
+                <strong>Incorrecto: </strong> El usuario ingresado no existe
+            </div>
+        </form>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <header class="pg-empty-placeholder"></header>
+        <script>
+            
+            $(document).ready(function(){
+
+                $("#form-init-sesion").submit(function(){
+                    // user: 123456
+                    // sena
+                    if($("#inputEmail").val() == "12345" || $("#inputPassword").val() == "sena"){
+                        
+                    }else{
+                       $('.alert').show();
+                    }
+                    return false;
+                })
+            });
+        </script>
+    </body>
+</html>

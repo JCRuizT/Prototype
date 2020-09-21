@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Dashboard Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="../dashboard.css" rel="stylesheet">
+        <link rel="../stylesheet" href="jquery-confirm.css">
+
+    </head>
+    <body>
+        <nav class="bg-white border-bottom fixed-top flex-md-nowrap navbar navbar-dark p-0">
+            <div class="col-md-3"> 
+                <a href="#"> <img class="align-self-start p-2" src="../1200px-Sena_Colombia_logo.svg.png" alt="" height="60" width="60"> </a> 
+            </div>
+            <div class="col-md-3 font-weight-bold">Tatiana - Instructor</div>
+            <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <a class="font-weight-bold nav-link text-primary" href="../index.html">Cerrar sesion</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                    <div class="sidebar-sticky">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="anuncios-instructor.html">
+                                Anuncios<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Lista-fichas-instructor.html">Material de apoyo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gestionar-foro-instructor.html">Foros de discusiòn</a>
+                            </li>
+                            <li class="nav-item">
+</li>
+                            <li class="nav-item">
+                                <a class="glyphicon glyphicon-calendar nav-link" href="Lista-ficha-horario-instructor.html">
+                                Horario</a>
+                            </li>
+                            <li class="nav-item">
+</li>
+                        </ul>
+                        <ul class="nav flex-column mb-2">
+                            <li class="nav-item">
+</li>
+                            <li class="nav-item">
+</li>
+                            <li class="nav-item">
+</li>
+                            <li class="nav-item">
+</li>
+                        </ul>
+                    </div>
+                </nav>
+                <main role="main" class="col-lg-10 col-md-9 ml-sm-auto px-4">
+                    <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                        <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                            <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                            <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                        </div>
+                    </div>
+                    <div class="align-items-center d-flex flex-md-nowrap flex-wrap justify-content-between mb-3 pb-2 pt-3">
+                        <h1 class="h2">Anuncios</h1>
+                    </div>
+                    <ul class="list-group"> 
+                        <li class="mb-4" style="list-style: none">
+                            <form id="form-anuncio">
+                                    <span style="color:red">*</span>
+                                    <input   class="form-control mb-3" type="text" placeholder="Asunto" id="titulo">
+                                    <span style="color:red">*</span>
+                                   <textarea id="respuesta"  placeholder="Anuncio" class="form-control" id="exampleFormControlTextarea1" rows="6" style="resize: none;"></textarea>
+                                    <input type="submit" class="btn btn-success mt-3" value="Responder">
+                            </form>
+
+                            <div class="alert alert-success mt-3 collapse respuesta-s">
+                                         Se ha publicado el anuncio
+                                    </div>
+
+                                     <div class="alert alert-danger mt-3 collapse respuesta-n">
+                                        Todos los campos son obligatorios
+                                    </div>
+                        </li>
+                        <li class="bol list-group-item">
+                            <b>Primer anuncio <div></div></b>
+                            <div>
+                                <br>
+                            </div>
+                            <p></p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, &quot;consecteur&quot;.
+                            <br>
+                            <br>
+                            <br>
+                            <br>En un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, d
+                            <span style=""><span style="font-size: 0.875rem;">escubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de &quot;de Finnibus Bonorum et Malorum&quot; (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, viene de una linea en la sección 1.10.32
+        El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de &quot;de Finibus Bonorum et Malorum&quot; por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</span><br></span>
+                            <span style=""><br><span style=""><br><span style="font-size: 1.5rem;">Publicado por: X-person</span></span></span>
+                            <div class="card-footer"> 
+                                <small class="text-muted">Last updated 3 mins ago</small> 
+                            </div>
+
+                                    <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+                        </li>
+                        <li class="bol list-group-item">
+                            <b>Segundo anuncio <div></div></b>
+                            <div>
+                                <br>
+                            </div>
+                            <p></p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, &quot;consecteur&quot;.
+                            <br>
+                            <br>
+                            <br>
+                            <br>En un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, d
+                            <span style=""><span style="font-size: 0.875rem;">escubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de &quot;de Finnibus Bonorum et Malorum&quot; (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, viene de una linea en la sección 1.10.32
+        El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de &quot;de Finibus Bonorum et Malorum&quot; por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</span><br></span>
+                            <span style=""><br><span style=""><br><span style="font-size: 1.5rem;">Publicado por: X-person</span></span></span>
+                            <div class="card-footer"> 
+                                <small class="text-muted">Last updated 3 mins ago</small> 
+                            </div>
+
+                                    <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+                        </li>
+                        <li class="bol list-group-item">
+                            <b>Tercer anuncio <div></div></b>
+                            <div>
+                                <br>
+                            </div>
+                            <p></p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, &quot;consecteur&quot;.
+                            <br>
+                            <br>
+                            <br>
+                            <br>En un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, d
+                            <span style=""><span style="font-size: 0.875rem;">escubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de &quot;de Finnibus Bonorum et Malorum&quot; (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, viene de una linea en la sección 1.10.32
+        El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de &quot;de Finibus Bonorum et Malorum&quot; por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</span><br></span>
+                            <span style=""><br><span style=""><br><span style="font-size: 1.5rem;">Publicado por: X-person</span></span></span>
+                            <div class="card-footer"> 
+                                <small class="text-muted">Last updated 3 mins ago</small> 
+                            </div>
+
+
+                                    <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+                        </li>
+                        <li class="bol list-group-item">
+                            <b>Cuarto anuncio <div></div></b>
+                            <div>
+                                <br>
+                            </div>
+                            <p></p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, &quot;consecteur&quot;.
+                            <br>
+                            <br>
+                            <br>
+                            <br>En un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, d
+                            <span style=""><span style="font-size: 0.875rem;">escubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de &quot;de Finnibus Bonorum et Malorum&quot; (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, viene de una linea en la sección 1.10.32
+        El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de &quot;de Finibus Bonorum et Malorum&quot; por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</span><br></span>
+                            <span style=""><br><span style=""><br><span style="font-size: 1.5rem;">Publicado por: X-person</span></span></span>
+                            <div class="card-footer"> 
+                                <small class="text-muted">Last updated 3 mins ago</small> 
+                            </div>
+
+                                    <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+                        </li>
+                        <li class="bol list-group-item">
+                            <b>Quinto anuncio <div></div></b>
+                            <div>
+                                <br>
+                            </div>
+                            <p></p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, &quot;consecteur&quot;.
+                            <br>
+                            <br>
+                            <br>
+                            <br>En un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, d
+                            <span style=""><span style="font-size: 0.875rem;">escubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de &quot;de Finnibus Bonorum et Malorum&quot; (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, viene de una linea en la sección 1.10.32
+        El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de &quot;de Finibus Bonorum et Malorum&quot; por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</span><br></span>
+                            <span style=""><br><span style=""><br><span style="font-size: 1.5rem;">Publicado por: X-person</span></span></span>
+                            <div class="card-footer"> 
+                                <small class="text-muted">Last updated 3 mins ago</small> 
+                            </div>
+
+                                    <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+                        </li>
+                        <h4 class="card-title"></h4>
+                        <div class="card-body"> 
+                            <p class="card-text"></p>
+                        </div>
+                        <div class="card-group"> 
+                            <div class="card"> 
+</div>                             
+                        </div>                         
+                    </ul>
+                </main>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../assets/js/jquery.min.js"></script>
+                <script src="../jquery-confirm.min.js"></script>
+
+        ></script>
+        <script>
+            
+
+        $(".delelte-r").click(function(){
+
+               $.confirm({
+    title: 'Eliminar Anuncio',
+    type: 'red',
+    content: '¿Desea eliminar este anuncio?',
+    buttons: {
+        confirmar: function () {
+            $.alert('Se ha eliminado correctamente');
+        },
+        cancelar: function () {
+            $.alert('Cancelado');
+        }
+    }
+});
+
+        });
+
+        </script>
+        <script>
+
+            $("#form-anuncio").submit(function(){
+                if($("#titulo").val() != "" && $("#respuesta").val() != ""){
+                    $('.respuesta-s').hide();
+                    $('.respuesta-n').hide();
+                    $('.respuesta-s').show();
+                }else{
+                    $('.respuesta-s').hide();
+                    $('.respuesta-n').hide();
+                    $('.respuesta-n').show();
+                }
+
+                return false;
+            });
+        </script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- Icons -->
+        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+        <script>feather.replace()</script>
+        <!-- Graphs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+        <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              datasets: [{
+                  data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+                  lineTension: 0,
+                  backgroundColor: 'transparent',
+                  borderColor: '#007bff',
+                  borderWidth: 4,
+                  pointBackgroundColor: '#007bff'
+              }]
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero: false
+                      }
+                  }]
+              },
+              legend: {
+                  display: false,
+              }
+          }
+      });
+    </script>
+    </body>
+</html>

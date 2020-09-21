@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Foros</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="../dashboard.css" rel="stylesheet">
+        <link rel="stylesheet" href="../jquery-confirm.css">
+    </head>
+    <body>
+         <nav class="bg-white border-bottom fixed-top flex-md-nowrap navbar navbar-dark p-0">
+            <div class="col-md-3"> 
+                <a href="#"> <img class="align-self-start p-2" src="../1200px-Sena_Colombia_logo.svg.png" alt="" height="60" width="60"> </a> 
+            </div>
+            <div class="col-md-3 font-weight-bold">Tatiana - Instructor</div>
+            <ul class="navbar-nav px-3">
+                <li class="nav-item text-nowrap">
+                    <a class="font-weight-bold nav-link text-primary" href="../index.html">Cerrar sesion</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                    <div class="sidebar-sticky">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="anuncios-instructor.html">
+                                Anuncios<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Lista-fichas-instructor.html">Material de apoyo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="gestionar-foro-instructor.html">Foros de discusiòn</a>
+                            </li>
+                            <li class="nav-item">
+</li>
+                            <li class="nav-item">
+                                <a class="glyphicon glyphicon-calendar nav-link " href="Lista-ficha-horario-instructor.html">
+                                Horario</a>
+                            </li>
+                            <li class="nav-item">
+</li>
+                        </ul>
+                        <ul class="nav flex-column mb-2">
+                            <li class="nav-item">
+</li>
+                            <li class="nav-item">
+</li>
+                            <li class="nav-item">
+</li>
+                            <li class="nav-item">
+</li>
+                        </ul>
+                    </div>
+                </nav>
+                <main role="main" class="col-lg-10 col-md-9 ml-sm-auto px-4">
+                    <div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                        <div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                            <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
+                        </div>
+                        <div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                            <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
+                        </div>
+                    </div>
+                    <div class="align-items-center d-flex flex-md-nowrap flex-wrap justify-content-between mb-3 pb-2 pt-3">
+                        <h1 class="h2"><br>&nbsp; Foros social</h1>
+                    </div>
+                    <ul class="list-group"> 
+                        <h4 class="card-title"></h4>
+                        <div class="card-body"  style="border: 1px solid">
+                            <h4>Bienvenidos</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta fugiat laudantium vel natus earum impedit, quidem eligendi distinctio quod nam corrupti consequatur sapiente facilis ducimus necessitatibus dolorum, cum. Commodi, id.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p class="card-text"></p>
+                            <p><b>Fecha inicio:</b> 2020-08-28 00:00:00</p>
+                            <p><b>Fecha fin:</b> 2020-12-30 23:30:00</p>
+                        </div>
+                        <div class="card-group mt-5"> 
+                            <div class="card"> 
+                                    <div style="border: 1px solid;" class="p-4">
+                                    <form id="form-respuesta">                    
+                                    <span style="color:red">*</span>
+                                   <textarea id="respuesta"  placeholder="Respuesta..." class="form-control" id="exampleFormControlTextarea1" rows="6" style="resize: none;"></textarea>
+                                    <input type="submit" class="btn btn-success mt-3" value="Responder">
+                                    </form>
+                                     <div class="alert alert-success mt-3 collapse respuesta-s">
+                                         Se ha publicado tu respuesta
+                                    </div>
+
+                                     <div class="alert alert-danger mt-3 collapse respuesta-n">
+                                        Todos los campos son obligatorios
+                                    </div>
+                               </div>
+                            <div class="mt-4 p-4">
+                                <h5><b>Respuestas</b></h5>
+                                <div class="mt-5 mb-5 p-3" style="border: 1px dashed;">
+                                    <p><b>Juan Sebastian Largo</b></p>
+                                    <p><b>Fecha:</b> 2020-09-08</p>
+                                    <p><b>hora:</b> 09:23:43</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores, id saepe laborum exercitationem adipisci dolore accusamus eos officiis molestias, quidem sint ex asperiores aliquam ipsa, voluptatem dolorem perspiciatis. Consequatur.lorem</p>
+                                     <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+                                </div>
+                                <div class="mt-5 mb-5 p-3" style="border: 1px dashed;">
+                                    <p><b>Julio Cesar Ruiz</b></p>
+                                    <p><b>Fecha:</b> 2020-09-08</p>
+                                    <p><b>hora:</b> 09:23:43</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores, id saepe laborum exercitationem adipisci dolore accusamus eos officiis molestias, quidem sint ex asperiores aliquam ipsa, voluptatem dolorem perspiciatis. Consequatur.lorem</p>
+                                    <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+                                </div>
+                                <div class="mt-5 mb-5 p-3" style="border: 1px dashed;">
+                                    <p><b>Andrez Diaz</b></p>
+                                    <p><b>Fecha:</b> 2020-09-08</p>
+                                    <p><b>hora:</b> 09:23:43</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores, id saepe laborum exercitationem adipisci dolore accusamus eos officiis molestias, quidem sint ex asperiores aliquam ipsa, voluptatem dolorem perspiciatis. Consequatur.lorem</p>
+                                    <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+                                </div>
+                                <div class="mt-5 mb-5 p-3" style="border: 1px dashed;">
+                                    <p><b>Juan Jose</b></p>
+                                    <p><b>Fecha:</b> 2020-09-08</p>
+                                    <p><b>hora:</b> 09:23:43</p>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores, id saepe laborum exercitationem adipisci dolore accusamus eos officiis molestias, quidem sint ex asperiores aliquam ipsa, voluptatem dolorem perspiciatis. Consequatur.lorem</p>
+                                    <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+                                </div>
+                            </div>
+                            </div>                             
+                        </div>                         
+                    </ul>
+
+                </main>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/popper.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <!-- Icons -->
+        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+        <script>feather.replace()</script>
+        <!-- Graphs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+                <script src="../jquery-confirm.min.js"></script>
+
+        <script>
+            
+
+        $(".delelte-r").click(function(){
+
+               $.confirm({
+    title: 'Eliminar Respuesta',
+    type: 'red',
+    content: '¿Desea eliminar la respuesta de este participante?',
+    buttons: {
+        confirmar: function () {
+            $.alert('Se ha eliminado correctamente');
+        },
+        cancelar: function () {
+            $.alert('Cancelado');
+        }
+    }
+});
+
+        });
+
+        </script>
+        <script>
+            $("#form-respuesta").submit(function(){
+                if($("#respuesta").val() != ""){
+                    $('.respuesta-n').hide();
+                    $('.respuesta-s').hide();
+                    $('.respuesta-s').show();
+                }else{
+                    $('.respuesta-s').hide();
+                    $('.respuesta-n').hide();
+                    $('.respuesta-n').show();
+                }
+
+                return false;
+            });
+        </script>
+        <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+              datasets: [{
+                  data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+                  lineTension: 0,
+                  backgroundColor: 'transparent',
+                  borderColor: '#007bff',
+                  borderWidth: 4,
+                  pointBackgroundColor: '#007bff'
+              }]
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero: false
+                      }
+                  }]
+              },
+              legend: {
+                  display: false,
+              }
+          }
+      });
+    </script>
+    </body>
+</html>
