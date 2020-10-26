@@ -36,7 +36,7 @@
                                 Anuncios<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Lista-fichas-instructor.html">Material de apoyo</a>
+                                <a class="nav-link" href="subir-material-apoyo.html">Material de apoyo</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="gestionar-foro-instructor.html">Foros de discusiòn</a>
@@ -81,15 +81,7 @@
                                     <input   class="form-control mb-3" type="text" placeholder="Asunto" id="titulo">
                                     <span style="color:red">*</span>
                                    <textarea id="respuesta"  placeholder="Anuncio" class="form-control" id="exampleFormControlTextarea1" rows="6" style="resize: none;"></textarea>
-                                   <select class="form-control mt-3">
-                                        <option value="0">Seleccionar Ficha</option>
-                                        <option value="1">1907036</option>
-                                        <option value="2">1907035</option>
-                                        <option value="3">1907034</option>
-                                        <option value="4">1907033</option>
-                                        <option value="5">1907032</option>
-                                   </select>
-                                    <input type="submit" class="btn btn-success mt-3" value="Responder">
+                                    <input type="submit" class="btn btn-success mt-3" value="Crear anuncio">
                             </form>
 
                             <div class="alert alert-success mt-3 collapse respuesta-s">
@@ -118,6 +110,10 @@
                             </div>
 
                                     <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+
+                                      <button type="button" class="update-r btn btn-primary"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" >Actualizar</button>
+
+
                         </li>
                         <li class="bol list-group-item">
                             <b>Segundo anuncio <div></div></b>
@@ -137,6 +133,8 @@
                             </div>
 
                                     <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+
+                                      <button type="button" class="update-r btn btn-primary"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" >Actualizar</button>
                         </li>
                         <li class="bol list-group-item">
                             <b>Tercer anuncio <div></div></b>
@@ -157,6 +155,8 @@
 
 
                                     <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+
+                                      <button type="button" class="update-r btn btn-primary"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" >Actualizar</button>
                         </li>
                         <li class="bol list-group-item">
                             <b>Cuarto anuncio <div></div></b>
@@ -176,6 +176,8 @@
                             </div>
 
                                     <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+
+                                      <button type="button" class="update-r btn btn-primary"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" >Actualizar</button>
                         </li>
                         <li class="bol list-group-item">
                             <b>Quinto anuncio <div></div></b>
@@ -195,6 +197,8 @@
                             </div>
 
                                     <button type="button" class="delelte-r btn btn-danger">Eliminar</button>
+
+                                      <button type="button" class="update-r btn btn-primary"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" >Actualizar</button>
                         </li>
                         <h4 class="card-title"></h4>
                         <div class="card-body"> 
@@ -208,6 +212,33 @@
                 </main>
             </div>
         </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Actualizar Anuncio</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form id="form-anuncio-actualizar">
+                                    <span style="color:red">*</span>
+                                    <input   class="form-control mb-3" type="text" placeholder="Asunto" id="titulo" value="anuncio x">
+                                    <span style="color:red">*</span>
+                                   <textarea id="respuesta"  placeholder="Anuncio" class="form-control" id="exampleFormControlTextarea1" rows="6" style="resize: none;" >escubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de &quot;de Finnibus Bonorum et Malorum&quot; (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, viene de una linea en la sección 1.10.32
+        El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de &quot;de Finibus Bonorum et Malorum&quot; por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</textarea>
+                            </form>
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" id="c-actualizar">Actualizar</button>
+      </div>
+    </div>
+  </div>
+</div>
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
@@ -216,7 +247,14 @@
 
         ></script>
         <script>
-            
+            $("#c-actualizar").click(function () {
+
+                $("#exampleModal").modal('hide');
+                $.alert({
+                    title: 'Actualizacion',
+                    content: 'Se ha actualizado correctamente',
+                });
+            });
 
         $(".delelte-r").click(function(){
 
@@ -253,8 +291,8 @@
                 return false;
             });
         </script>
-        <script src="assets/js/popper.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="../assets/js/popper.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
         <!-- Icons -->
         <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
         <script>feather.replace()</script>

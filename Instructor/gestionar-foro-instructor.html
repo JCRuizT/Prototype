@@ -35,7 +35,7 @@
                                 Anuncios<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Lista-fichas-instructor.html">Material de apoyo</a>
+                                <a class="nav-link" href="subir-material-apoyo.html">Material de apoyo</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="gestionar-foro-instructor.html">Foros de discusiòn</a>
@@ -87,15 +87,6 @@
                                 <span style="color:red">*</span>
                                 <input type="date"  class="form-control" id="select-fecha">
                                 <span style="color:red">*</span>
-                                <select class="form-control mt-2" id="select-ficha">
-                                  <option value="0">Seleccionar Ficha</option>
-                                  <option value="1">1907036</option>
-                                  <option value="1">1907034</option>
-                                  <option value="1">1907035</option>
-                                  <option value="1">1907034</option>
-                                  <option value="1">1907033</option>
-
-                                </select>
                                 <input type="submit" class="mt-4 btn btn-success" value="Crear Foro">
                             </form>
 
@@ -221,15 +212,10 @@
 
          <script>
 
-            var f = false;
-            var strUser = document.querySelector("#select-ficha");
-
-        $("#select-fecha").change(function(){
-                f = true;
-        });
+          
             $("#crear-foro").submit(function(){
 
-                if(strUser.options.selectedIndex != 0 && $("#name-f").val() != "" &&  $("#description-f").val() != ""  && f!=false){
+                if($("#name-f").val() != "" &&  $("#description-f").val() != ""){
                     $('.respuesta-n').hide();
                     $('.respuesta-s').hide();
                     $('.respuesta-s').show();

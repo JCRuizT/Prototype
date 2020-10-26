@@ -52,9 +52,9 @@
                             </li>
                             <li class="nav-item">
 </li>
-                            <li class="nav-item">
-                                <a class="glyphicon glyphicon-calendar nav-link" href="gestionar-programas-admin.html">
-                                Gestionar Programas de formacion</a>
+                              <li class="nav-item">
+                                <a class="glyphicon glyphicon-calendar nav-link" href="panel-control.html">
+                                Panel de control</a>
                             </li>
 
                             <li class="nav-item">
@@ -98,6 +98,30 @@
 
                                          <option value="3">Tecnologia en Comunicaciones</option>
                                     </select>
+                                    <span style="color:red">*</span>
+                                    <select id="programa-formacion" class="form-control">
+                                        <option value="0">Seleccionar Jornada</option>
+
+                                         <option value="1">Diurna</option>
+                                         <option value="2">Nocturna</option>
+                                    </select>
+
+                                     <span style="color:red">*</span>
+                                    <select id="programa-formacion" class="form-control">
+                                        <option value="0">Seleccionar Modalidad</option>
+
+                                         <option value="1">Presencial</option>
+                                         <option value="2">Virtual</option>
+                                    </select>
+
+                                     <span style="color:red">*</span>
+                                    <select id="programa-formacion" class="form-control">
+                                        <option value="0">Seleccionar Tipo de Oferta</option>
+
+                                         <option value="1">Abierta</option>
+                                         <option value="2">Virtual</option>
+                                    </select>
+
                                     <div>
                                     <span style="color:red">*</span>
                                     <label class="d-block">Seleccionar ficha de inicio</label>
@@ -156,37 +180,57 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Actualizar Material de apoyo</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Actualizar Ficha</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <form>
-          <div class="form-group">
-             <span style="color:red">*</span>
-                                    <input   class="form-control mb-3" type="text" placeholder="Numero de Ficha" value="190703x" id="titulo">
+                                    <input value="1904035" readonly class="form-control mb-3" type="text" placeholder="Numero de Ficha" id="titulo">
                                     <span style="color:red">*</span>
                                     <select id="programa-formacion" class="form-control">
                                         <option value="0">Seleccionar Programa de Formacion</option>
 
-                                         <option value="1" selected>Tecnica en Programacion de software</option>
-                                         <option value="2">Tecnologia en analisis y desarrollo de sistemas de informacion</option>
+                                         <option value="1">Tecnica en Programacion de software</option>
+                                         <option selected value="2">Tecnologia en analisis y desarrollo de sistemas de informacion</option>
 
                                          <option value="3">Tecnologia en Comunicaciones</option>
                                     </select>
+                                    <span style="color:red">*</span>
+                                    <select id="programa-formacion" class="form-control">
+                                        <option value="0">Seleccionar Jornada</option>
+
+                                         <option selected value="1">Diurna</option>
+                                         <option value="2">Nocturna</option>
+                                    </select>
+
+                                     <span style="color:red">*</span>
+                                    <select id="programa-formacion" class="form-control">
+                                        <option value="0">Seleccionar Modalidad</option>
+
+                                         <option selected value="1">Presencial</option>
+                                         <option value="2">Virtual</option>
+                                    </select>
+
+                                     <span style="color:red">*</span>
+                                    <select id="programa-formacion" class="form-control">
+                                        <option value="0">Seleccionar Tipo de Oferta</option>
+
+                                         <option selected value="1">Abierta</option>
+                                         <option value="2">Virtual</option>
+                                    </select>
+
                                     <div>
                                     <span style="color:red">*</span>
                                     <label class="d-block">Seleccionar ficha de inicio</label>
-                       	  			<input type="date" value="2018-01-01" class="btn btn-light mt-3" id="fi-u">
-                       	  			</div>
-                       	  			<div>
-                       	  			<span style="color:red">*</span>
+                                <input type="date" value="2020-01-20" class="btn btn-light mt-3" id="fi">
+                                </div>
+                                <div>
+                                <span style="color:red">*</span>
                                     <label class="d-block">Seleccionar ficha de fin</label>
-                                     <input type="date" value="2020-01-01" class="btn btn-light mt-3" id="ff-u">
-                                	</div>
-                            </form>
-          </div>
+                                     <input value="2022-01-20" type="date" class="btn btn-light mt-3" id="ff">
+                                  </div>
         </form>
       </div>
       <div class="modal-footer">
