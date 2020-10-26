@@ -81,27 +81,65 @@
                         </div>
                     </div>
                     <div class="align-items-center d-flex flex-md-nowrap flex-wrap justify-content-between mb-3 pb-2 pt-3">
-                        <h1 class="h2">Configuración</h1>
+                        <h1 class="h2">Gestion de Roles</h1>
                     </div>
-                    <ul class="list-group">
-                      <li style="cursor: pointer;" class="list-group-item"><a href="gestionar-programas-admin.html">Gestionar Programas de Formación</a></li>
+                    <ul class="list-group"> 
+                         <li class="mb-4" style="list-style: none">
+                            <form id="form-programa-crear">
+              
+                                    <span style="color:red">*</span>
+                                    <input   class="form-control mb-3" type="text" placeholder="Nombre" id="name">
+                                    <span style="color:red">*</span>
+                                
+                                    <input type="submit" class="btn btn-success mt-4" value="Crear">
+                                    
+                            </form>
 
-                      <li style="cursor: pointer;" class="list-group-item"><a href="g-tp.html">Gestionar Tipos de programa de formacion de Formación</a></li>
-                      <li class="list-group-item"><a href="g-f.html">Gestionar Fases</a></li>
-                      <li class="list-group-item"><a href="g-e.html">Gestionar Estados</a></li>
-                      <li class="list-group-item"><a href="g-to.html">Gestionar Tipos de Ofertas</a></li>
-                      <li class="list-group-item"><a href="g-j.html">Gestionar Jornandas</a></li>
-                      <li class="list-group-item"><a href="g-m.html">Gestionar Modalidades</a></li>
+                            <div class="alert alert-success mt-3 collapse respuesta-s">
+                                         Se ha creado el Rol
+                                    </div>
 
-                      <li class="list-group-item"><a href="g-r.html">Gestionar Roles</a></li>
-            </ul>
+                                     <div class="alert alert-danger mt-3 collapse respuesta-n">
+                                        Todos los campos son obligatorios
+                                    </div>
+                        </li> 
+
+                
+                            
+                     <h3>Lista de Roles</h3>
+                        <li class="nav-item mt-3" style="list-style: none;">
+                            Administrador
+                            <div>
+                            <button  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" type="button" class="btn btn-primary">Actualizar</button>
+                            <botton class="btn btn-danger delelte-f">Eliminar</botton>
+                            </div>
+                        </li> 
+
+                         <li class="nav-item mt-3" style="list-style: none;">
+                            Instructor
+                            <div>
+                            <button  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" type="button" class="btn btn-primary">Actualizar</button>
+                            <botton class="btn btn-danger delelte-f">Eliminar</botton>
+                            </div>
+                        </li> 
+
+                          <li class="nav-item mt-3" style="list-style: none;">
+                            Aprendiz
+                            <div>
+                            <button  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" type="button" class="btn btn-primary">Actualizar</button>
+                            <botton class="btn btn-danger delelte-f">Eliminar</botton>
+                            </div>
+                        </li>                         
+                    </ul>
+                </main>
+            </div>
         </div>
 
          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Actualizar Material de apoyo</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Actualizar Rol</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -110,17 +148,9 @@
         <form id="form-programa">
               
                                     <span style="color:red">*</span>
-                                    <input  class="form-control mb-3" value="analisis y Desarrollo de sistemas de informacin" type="text" placeholder="Nombre" id="titulo">
+                                    <input  class="form-control mb-3" value="Activo" type="text" placeholder="Nombre" id="titulo">
 
                                     <span style="color:red">*</span>
-                                    <input   class="form-control mb-3" value="Tadsi" type="text" placeholder="Diminutivo Programa Formación" id="titulo">
-                                    <span style="color:red">*</span>
-                                    <select class="form-control">
-                                      <option value="0">Tipo de Programa Formacion</option>
-                                      <option value="1">Tecnico</option>
-                                      <option value="2" selected>Tecnologo</option>
-                                      <option value="3">Especializacion</option>
-                                    </select>
                                     
                             </form>
       </div>
@@ -145,9 +175,9 @@
         $(".delelte-f").click(function(){
 
                $.confirm({
-    title: 'Eliminar Programa de Formacion',
+    title: 'Eliminar Rol',
     type: 'red',
-    content: '¿Desea eliminar este Programa de Formacion?',
+    content: '¿Desea eliminar este Rol?',
     buttons: {
         confirmar: function () {
             $.alert('Se ha eliminado correctamente');
@@ -156,7 +186,7 @@
             $.alert('Cancelado');
         }
     }
-	});
+  });
 
         });
 
