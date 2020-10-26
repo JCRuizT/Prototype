@@ -48,7 +48,7 @@
                                 Gestionar Administradores</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="gestionar-horarios-admin.html">Gestionar Horarios</a>
+                                <a class="nav-link" href="horario-admin.html">Gestionar Horarios</a>
                             </li>
                             <li class="nav-item">
 </li>
@@ -89,7 +89,15 @@
                             <form id="form-instructor">
                                     <span style="color:red">*</span>
                                     <input   class="form-control mb-3" type="text" placeholder="Identificación" id="id">
+                                    
                                     <span style="color:red">*</span>
+                                    <select class="form-control">
+                                     <option>Seleccionar tipo de identificacion</option> <option>Cedula</option>
+                                     <option>Cedula Extrangeria</option>
+                                       <option>Tarjeta de identidad</option>
+                                    </select>
+                                    <span style="color:red">*</span>
+
                                     <input   class="form-control mb-3" type="text" placeholder="Primer nombre" id="pn">
                                     <input   class="form-control mb-3" type="text" placeholder="Segundo nombre" id="sn">
                                     <span style="color:red">*</span>
@@ -106,8 +114,8 @@
                                          Se ha creado el administrador
                                     </div>
 
-                                     <div class="alert alert-danger mt-3 collapse respuesta-n">
-                                        Todos los campos son obligatorios
+                                   <div class="alert alert-danger mt-3 collapse respuesta-n">
+                                        Falta diligenciar algunos campos obligatorios
                                     </div>
                         </li> 
 
